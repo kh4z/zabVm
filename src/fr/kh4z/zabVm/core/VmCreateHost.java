@@ -31,7 +31,7 @@ public class VmCreateHost {
 
     private static Logger logger = LoggerFactory.getLogger("zabVm");
 
-    private final static long DISCOVEREDHOSTS = 100100000000020L;
+    private final static long DISCOVEREDHOSTS = 100100000000005L;
 
     VirtualMachine vm;
 
@@ -63,12 +63,12 @@ public class VmCreateHost {
     private String getHostTemplate(String guestOS){
         // A revoir
         if(guestOS.contains("linux")){
-            return "100100000010059";
+            return "";
         }else if (guestOS.contains("windows")){
-            return "100100000010128";
+            return "";
         }else{
             // template linux par defaut
-            return "100100000010059";
+            return "";
         }
     }
 

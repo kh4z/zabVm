@@ -61,7 +61,7 @@ public final class Main {
                 logger.debug("Connexion à l'API Zabbix");
                 zabbixApi = new ZabbixApiClient();
 
-                execute(vcenter.getVirtualMachines());
+                importVm(vcenter.getVirtualMachines());
 
                 // Logout
                 vcenter.logout();
@@ -69,7 +69,7 @@ public final class Main {
         }
     }
 
-    private static void execute(ManagedEntity[] mgEntity){
+    private static void importVm(ManagedEntity[] mgEntity){
         for(int i = 0; i<  mgEntity.length; i++){
             VirtualMachine vm = (VirtualMachine) mgEntity[i];
             if(!vm.getName().contains(pf.getVmNameExclude())){
