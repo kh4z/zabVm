@@ -12,14 +12,12 @@ Create a configuration directory and create a properties files who contains (you
   vcenter.user=zabbix  
   vcenter.password=changeit 
   
-  # VM
-  
+  # VM  
   vm.name.regexp=^([a-zA-Z0-9]+).*  
   vm.name.toLowerCase=true  
   vm.name.exclude=Template
   
-  # Zabbix API
-  
+  # Zabbix API  
   zabbixAPI.url=https://zabbix.mydomain.lan/api_jsonrpc.php  
   zabbixAPI.user=read  
   zabbixAPI.password=changeit
