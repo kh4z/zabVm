@@ -2,8 +2,7 @@ ZabVm
 =======
 Automaticaly import VM into Zabbix (using Vmware API and Zabbix API).
 
-
-Installation:
+Configuration:
 ============
 Create a configuration directory and create a properties files (you can have multiples properties files):
 - example:      
