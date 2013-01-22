@@ -1,0 +1,5 @@
+#!/bin/sh
+ZABVM_JAR="./target/zabVm-1.0.0-jar-with-dependencies.jar"
+JAVA_OPTS="-Djavax.net.ssl.trustStore=/etc/zabvm/keystore.jks"
+MAIN_CLASSNAME='fr.kh4z.zabVm.core.Main'
+java ${JAVA_OPTS} -cp ${ZABVM_JAR} ${MAIN_CLASSNAME} ${@}
